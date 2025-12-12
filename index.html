@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrom JS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="ui-layer">
+            <div class="hud-panel" id="score-panel">
+                <div id="player-score">Player: 0</div>
+                <div id="ai-score">AI: 0</div>
+            </div>
+            <div class="hud-panel interactive" id="settings-panel">
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <div class="hud-panel" id="turn-panel">
+                Turn: <span id="current-turn">Player</span>
+            </div>
+        </div>
+        <div id="controls-hint">Drag to aim and adjust power. Release to shoot.</div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
